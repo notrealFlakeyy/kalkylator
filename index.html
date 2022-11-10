@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>kalkylator</title>
+</head>
+
+<body>
+    <div id="kalkylator">
+
+        <div id="numror">
+
+            <div id="answer"></div>
+
+            <div class="row1">
+                <button onclick="giveAnswer()" class="answer-button">=</button>
+                <button onclick="percent('%')">%</button>
+                <button onclick="clearAnswer('')" id="delete">DEL</button>
+                <button onclick="subtraction('-')">-</button>
+            </div>
+
+            <div class="row2">
+                <button onclick="updateAnswer('7')" class="num7">7</button>
+                <button onclick="updateAnswer('8')" class="num8">8</button>
+                <button onclick="updateAnswer('9')" class="num9">9</button>
+                <button onclick="multiplication('*')" id="multi">*</button>
+            </div>
+            <div class="row3">
+                <button onclick="updateAnswer('4')" class="num4">4</button>
+                <button onclick="updateAnswer('5')" class="num5">5</button>
+                <button onclick="updateAnswer('6')" class="num6">6</button>
+                <button onclick="addition('+')" id="plus">+</button>
+            </div>
+
+            <div class="row4">
+                <button onclick="updateAnswer('1')" class="num1">1</button>
+                <button onclick="updateAnswer('2')" class="num2">2</button>
+                <button onclick="updateAnswer('3')" class="num3">3</button>
+                <button onclick="division('/')">/</button>
+            </div>
+
+            <div class="row4">
+                <button onclick="updateAnswer('0')" class="zero">0</button>
+            </div>
+            <script src="main.js"></script>
+</body>
+
+</html>
